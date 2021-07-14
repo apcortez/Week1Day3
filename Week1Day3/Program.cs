@@ -31,9 +31,27 @@ namespace Week1Day3
             Console.WriteLine($"Il valore di var1 dopo la chiamata a Cambiovalore è {var1}");
             
             CambiovalorePerRif(ref var1); //cambia il valore di var1 alla stampa --> passaggio per riferimento
-            Console.WriteLine($"Il valore di var1 dopo la chiamata a CambiovalorePerRif è {var1}"); 
+            Console.WriteLine($"Il valore di var1 dopo la chiamata a CambiovalorePerRif è {var1}");
+
+
+            //Chiamata metodo SommaDopoIncremento
+            int n = 2;
+            int m = 10;
+            int sommaNM = SommaDopoIncremento(ref n, m);
+            Console.WriteLine($"La variabile n vale: {n}");
+            Console.WriteLine($"La variabile m vale: {m}");
+            Console.WriteLine($"La somma n+m vale: {sommaNM}");
 
         }
+
+        //Scrivere una funzione che prenda in input 2 interi (il primo per riferimento, il secondo per valore) li incrementa di 1 e resistuisce la loro somma
+        private static int SommaDopoIncremento(ref int x, int y)
+        {
+            x++;
+            y++;
+            return x + y;
+        }
+
 
         //Metodo con passaggio per valore
         private static void Cambiovalore(int x)
