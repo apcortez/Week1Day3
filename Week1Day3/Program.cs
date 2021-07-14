@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Week1Day3
 {
@@ -31,8 +32,11 @@ namespace Week1Day3
 
             int[] numeri = { 1, 2, 45, 67, 70 };
 
-
-
+            List<int> listaNumeri = new List<int>();
+            listaNumeri.Add(23);
+            listaNumeri.Add(45);
+            int elementi = listaNumeri.Count;
+            Console.WriteLine($"La mia listaNumeri contiene {elementi} elementi");
 
         }
 
