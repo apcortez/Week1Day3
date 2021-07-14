@@ -44,6 +44,15 @@ namespace Week1Day3
 
         }
 
+        //Mi deve sostituire la differenza ma mi interessa anche avere in output il prodotto dei 2 valori passati in input
+        private static int DifferenzaEProdotto(int x, int y, out int p)
+        {
+            int diff = x - y;
+            p = x * y; //p viene riconosciuta al di fuori del metodo 
+
+            return diff;
+        }
+
         //Scrivere una funzione che prenda in input 2 interi (il primo per riferimento, il secondo per valore) li incrementa di 1 e resistuisce la loro somma
         private static int SommaDopoIncremento(ref int x, int y)
         {
