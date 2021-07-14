@@ -42,6 +42,12 @@ namespace Week1Day3
             Console.WriteLine($"La variabile m vale: {m}");
             Console.WriteLine($"La somma n+m vale: {sommaNM}");
 
+            //out
+            int x1 = 2;
+            int x2 = 3;
+            int prodotto;
+            int diffX1X2 = DifferenzaEProdotto(x1, x2, out prodotto);
+            Console.WriteLine($"Il prodotto tra x1 e x2 è {prodotto}");
         }
 
         //Mi deve sostituire la differenza ma mi interessa anche avere in output il prodotto dei 2 valori passati in input
