@@ -27,7 +27,13 @@ namespace Week1Day3
             {
                 Console.Write($"{primoArray[i]}\t");
             }
-            
+
+
+            int[] numeri = { 1, 2, 45, 67, 70 };
+
+
+
+
         }
 
         private static void Routine()
