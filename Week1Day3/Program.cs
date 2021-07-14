@@ -45,9 +45,21 @@ namespace Week1Day3
             //out
             int x1 = 2;
             int x2 = 3;
-            int prodotto;
-            int diffX1X2 = DifferenzaEProdotto(x1, x2, out prodotto);
+            //int prodotto;
+            int diffX1X2 = DifferenzaEProdotto(x1, x2, out int prodotto);
             Console.WriteLine($"Il prodotto tra x1 e x2 è {prodotto}");
+
+
+            //TryParse.
+            Menu();
+            Console.WriteLine("Inserisci la tua scelta: ");
+            //int scelta = int.Parse(Console.ReadLine());
+            //bool verificaCheSiaIntero = int.TryParse(Console.ReadLine(), out int scelta);
+            int scelta;
+            while (!int.TryParse(Console.ReadLine(), out scelta) || scelta < 1 || scelta > 3) {
+                Console.WriteLine("Scelta errata. Riprova.");
+            }
+            Console.WriteLine($"La scelta dell'utente è {scelta}");
         }
 
         //Mi deve sostituire la differenza ma mi interessa anche avere in output il prodotto dei 2 valori passati in input
