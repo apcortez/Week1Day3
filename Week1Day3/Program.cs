@@ -106,6 +106,13 @@ namespace Week1Day3
             return z;
         }
 
+        //Overloading -> guarda solo la signature: nome metodo+ parametri
+        //Il valore di ritorno può essere diverso
+        private static int Sum(int x, int y, int z)
+        {
+            return x + y + z;
+        }
+
         private static void Menu()
         {
             Console.WriteLine("***MENU***");
