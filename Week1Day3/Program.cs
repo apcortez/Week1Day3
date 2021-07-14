@@ -5,10 +5,28 @@ namespace Week1Day3
     class Program
     {
         static void Main(string[] args)
-        {   
+        {
             //Metodi
             //Routine();
 
+
+            //Array
+            int[] primoArray = new int[5];
+            primoArray[0] = 3;
+            primoArray[1] = 10;
+            primoArray[2] = 13;
+            primoArray[3] = 55;
+            primoArray[4] = 8;
+
+            //cerco la posizione in base al valore
+            int indice = Array.IndexOf(primoArray, 10);
+            Console.WriteLine($"Il numero 10 si trova alla posizione {indice}"); //restituisce solo il primo indice in cui trova il valore 10 anche se vi sono più indici con valore 10.
+
+            Console.WriteLine("Stampa del mio primoArray");
+            for(int i =0; i<primoArray.Length; i++)
+            {
+                Console.Write($"{primoArray[i]}\t");
+            }
             
         }
 
