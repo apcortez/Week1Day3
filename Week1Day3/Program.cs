@@ -9,9 +9,18 @@ namespace Week1Day3
             //routine
             Menu();
 
+            int a = 1;
+            int b = 2;
+            int somma = 0;
+            somma = Sum(a, b);
 
 
+        }
 
+        private static int Sum(int x, int y)
+        {
+            int z = x + y;
+            return z;
         }
 
         private static void Menu()
