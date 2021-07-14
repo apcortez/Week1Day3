@@ -77,7 +77,7 @@ namespace Week1Day3.Esercizio2
 
         private static bool Decrescente(int[] arrayNumero)
         {
-            bool decresc = true;
+           
             for (int x = 0; x < arrayNumero.Length-1; x++)
             {
                 if (arrayNumero[x] > arrayNumero[x + 1])
@@ -85,17 +85,17 @@ namespace Week1Day3.Esercizio2
                     continue;
                 }else
                 {
-                    decresc = false;
+                    return false;
                 }
             }
 
-            return decresc;
+            return true;
 
         }
 
         private static bool Cresente(int[] arrayNumero)
         {
-            bool cresc = true;
+            
             for (int x = 0; x < arrayNumero.Length-1; x++)
             {   
                 if (arrayNumero[x] < arrayNumero[x + 1])
@@ -104,11 +104,11 @@ namespace Week1Day3.Esercizio2
                 }
                 else
                 {
-                    cresc = false;
+                   return false;
                 }
             }
 
-            return cresc;
+            return true;
 
         }
 
