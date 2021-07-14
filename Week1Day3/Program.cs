@@ -36,9 +36,23 @@ namespace Week1Day3
             listaNumeri.Add(23);
             listaNumeri.Add(45);
             int elementi = listaNumeri.Count;
-            Console.WriteLine($"La mia listaNumeri contiene {elementi} elementi");
+            Console.WriteLine($"La mia listaNumeri contiene {elementi} elementi\n");
 
-        }
+
+            //Matrici
+            int[,] matrice = new int[2, 3]; //righe = 2; colonne = 3
+            int[,] matrice2 = new int[2, 3] { { 1, 2, 3 }, { 4, 5, 6 } };
+
+            for (int i = 0; i < 2; i++)
+            { 
+                for(int j =0; j<3; j++)
+                {
+                    Console.Write(matrice2[i, j] + "\t");
+
+                }
+                Console.WriteLine("\n");
+            }
+         }
 
         private static void Routine()
         {
