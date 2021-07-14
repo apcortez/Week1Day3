@@ -5,6 +5,14 @@ namespace Week1Day3
     class Program
     {
         static void Main(string[] args)
+        {   
+            //Metodi
+            //Routine();
+
+            
+        }
+
+        private static void Routine()
         {
             //routine
             Menu();
@@ -29,7 +37,7 @@ namespace Week1Day3
             int var1 = 10;
             Cambiovalore(var1); //NON cambia valore var1 alla stampa rimane sempre 10 perchè sta solo nel metodo --> passaggio di parametro per valore
             Console.WriteLine($"Il valore di var1 dopo la chiamata a Cambiovalore è {var1}");
-            
+
             CambiovalorePerRif(ref var1); //cambia il valore di var1 alla stampa --> passaggio per riferimento
             Console.WriteLine($"Il valore di var1 dopo la chiamata a CambiovalorePerRif è {var1}");
 
@@ -56,7 +64,8 @@ namespace Week1Day3
             //int scelta = int.Parse(Console.ReadLine());
             //bool verificaCheSiaIntero = int.TryParse(Console.ReadLine(), out int scelta);
             int scelta;
-            while (!int.TryParse(Console.ReadLine(), out scelta) || scelta < 1 || scelta > 3) {
+            while (!int.TryParse(Console.ReadLine(), out scelta) || scelta < 1 || scelta > 3)
+            {
                 Console.WriteLine("Scelta errata. Riprova.");
             }
             Console.WriteLine($"La scelta dell'utente è {scelta}");
